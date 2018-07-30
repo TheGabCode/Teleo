@@ -1,0 +1,166 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="gab.cdi.teloe.HomeFragment"
+    android:background="#303030">
+    <LinearLayout
+        android:id="@+id/customToastRoom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/teleoLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/customToastRoom">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teleo"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="36sp"
+            android:paddingStart="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Television x Online Viewing"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/roboto_light"
+            android:textSize="22sp"
+            android:paddingStart="20dp"/>
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/teleoModes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teleoLabel">
+
+        <ImageView
+            android:id="@+id/teleoOnairImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/onair"
+            app:layout_constraintEnd_toStartOf="@+id/teleoOnlineImage"
+            app:layout_constraintHeight_percent="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5"
+            />
+        <ImageView
+            android:id="@+id/teleoOnlineImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/online"
+            app:layout_constraintHeight_percent="0.75"
+            app:layout_constraintStart_toEndOf="@id/teleoOnairImage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <TextView
+            android:id="@+id/mandeleiOnAirText"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Mandelei\nOn-air"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/teleoOnairImage"
+            app:layout_constraintWidth_percent="0.5" />
+        <TextView
+            android:id="@+id/mandeleiOnlineText"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Mandelei\nOnline"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintStart_toEndOf="@id/mandeleiOnAirText"
+            app:layout_constraintTop_toBottomOf="@+id/teleoOnlineImage"
+            app:layout_constraintWidth_percent="0.5" />
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/nostalgiaSkins"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teleoModes">
+
+        <TextView
+            android:id="@+id/nostalgiaSkinsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/border_primary"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_vertical"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:text="Nostalgia Skins"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/nostalgiaSkinsBanner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nostalgiaSkinsLabel"
+            android:src="@drawable/skins"
+            android:scaleType="fitXY"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/whatsOnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nostalgiaSkins"
+        android:text="What's On!"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:paddingStart="20dp"
+        android:gravity="center_vertical"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

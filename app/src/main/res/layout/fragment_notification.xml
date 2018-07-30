@@ -1,0 +1,137 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gab.cdi.teloe.NotificationFragment"
+    android:background="#4A4C49">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            >
+
+            <TextView
+                android:id="@+id/notificationLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Notification"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="#F2F2F2"
+                android:textSize="36sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/notificationBanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:text="What's going on?"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="#F2F2F2"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/notificationLabel" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/notificationRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/notificationBanner" />
+            <!--<LinearLayout-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:paddingRight="20dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/notificationLabelContainer">-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_marginBottom="30dp">-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/firstNotif"-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_height="100dp"-->
+                        <!--android:src="@drawable/thereset"/>-->
+                    <!--<TextView-->
+                        <!--android:paddingLeft="15dp"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textSize="16sp"-->
+                        <!--android:fontFamily="@font/roboto"-->
+                        <!--android:textColor="#F2F2F2"-->
+                        <!--android:text="Someone replied on your comment on 'The Reset - Spoilers'"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_marginBottom="30dp">-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/secondNotif"-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_height="100dp"-->
+                        <!--android:src="@drawable/vlog_tv"/>-->
+                    <!--<TextView-->
+                        <!--android:paddingLeft="15dp"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textSize="16sp"-->
+                        <!--android:fontFamily="@font/roboto"-->
+                        <!--android:text="VlogTV has a new episode"-->
+                        <!--android:textColor="#F2F2F2"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_marginBottom="30dp">-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/thirdNotif"-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_height="100dp"-->
+                        <!--android:src="@drawable/teloe"/>-->
+                    <!--<TextView-->
+                        <!--android:paddingLeft="15dp"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textSize="16sp"-->
+                        <!--android:fontFamily="@font/roboto"-->
+                        <!--android:text="Welcome has a new episode"-->
+                        <!--android:textColor="#F2F2F2"/>-->
+                <!--</LinearLayout>-->
+
+
+
+
+            <!--</LinearLayout>-->
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</FrameLayout>

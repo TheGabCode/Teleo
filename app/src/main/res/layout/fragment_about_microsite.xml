@@ -1,0 +1,94 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gab.cdi.teloe.AboutMicrosite"
+    android:background="#FFFFFF"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/aboutLabelContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="About Teleo"
+                android:textColor="#2D2E2D"
+                android:textSize="36sp"
+                android:layout_marginBottom="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:text="Teleo is the television-online multimedia app by Mandelei Multimedia Corp. "/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aboutContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:layout_marginTop="70dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutLabelContainer">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="#232323"
+                android:layout_marginBottom="30dp"
+                android:text="Teleo Terms of Service"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="#232323"
+                android:layout_marginBottom="60dp"
+                android:text="Mandelei Privacy Policy"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:onClick="onClick"
+                android:id="@+id/teleoMicrositeShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="#232323"
+                android:layout_marginBottom="30dp"
+                android:text="Teleo Shows"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="#232323"
+                android:layout_marginBottom="30dp"
+                android:text="Shows Microsite"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

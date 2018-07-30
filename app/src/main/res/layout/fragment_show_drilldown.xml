@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gab.cdi.teloe.ShowDrilldown"
+    android:background="#4A4C49">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp">
+            <ImageView
+                android:id="@+id/showBannerImage"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/thereset_rect"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/showTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="160dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="THE RESET"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintStart_toStartOf="@+id/showBannerImage"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:id="@+id/showDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:fontFamily="@font/roboto"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim lorem, sodales sit amet nulla sit amet, lacinia laoreet est. Praesent at finibus risus, at auctor ex. Maecenas ac augue ac est pharetra blandit. Sed venenatis elit eros, sed bibendum tellus sollicitudin auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget auctor dui. Donec nisl lectus, consequat non aliquam eget, aliquet non eros. Sed convallis, arcu at tincidunt cursus, nisi lorem auctor nibh, et ullamcorper ex arcu at arcu. Aenean quis ex sagittis, ullamcorper massa at, pharetra mauris. Nulla facilisi. Integer viverra mattis erat, a hendrerit ipsum tristique eu. Praesent aliquam a ipsum sed egestas. Sed eget bibendum leo. Phasellus eleifend mauris nibh, sed fermentum ligula blandit a. Donec fermentum erat dolor, in malesuada est accumsan aliquam."
+                android:textColor="#F2F2F2"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/showBannerImage" />
+            <ImageView
+                android:id="@+id/secondaryShowBannerImage"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="15dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/thereset"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/showDescription" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>

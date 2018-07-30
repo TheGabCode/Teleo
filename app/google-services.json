@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "715288169272",
+    "firebase_url": "https://teloe-fd6b5.firebaseio.com",
+    "project_id": "teloe-fd6b5",
+    "storage_bucket": "teloe-fd6b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715288169272:android:f09bfa02268ee726",
+        "android_client_info": {
+          "package_name": "gab.cdi.teloe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715288169272-qq1mj54k5usu6ajlaqlut7lari4tg9gi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gab.cdi.teloe",
+            "certificate_hash": "6e00b3aa1741ab4386160329fee8b169eca7b16d"
+          }
+        },
+        {
+          "client_id": "715288169272-lpquap00cmsdqskjeu3auoquriejj8ir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqnG20_7re8zdvhyXL-irbqtuCEHY2frI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715288169272-lpquap00cmsdqskjeu3auoquriejj8ir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

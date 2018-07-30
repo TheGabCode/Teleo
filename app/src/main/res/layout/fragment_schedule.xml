@@ -1,0 +1,328 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gab.cdi.teloe.ScheduleFragment"
+    android:background="#303030">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20sp">
+            <TextView
+                android:id="@+id/scheduleLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="Schedule"
+                android:textColor="#F2F2F2"
+                android:textSize="36sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/mondayLabel"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="Monday"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scheduleLabel" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mondayShowsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mondayLabel" />
+
+            <TextView
+                android:id="@+id/tuesdayLabel"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="Tuesday"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mondayShowsRecyclerView" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/tuesdayShowsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tuesdayLabel" />
+            <TextView
+                android:id="@+id/wednesdayLabel"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="Wednesday"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tuesdayShowsRecyclerView" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/wednesdayShowsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wednesdayLabel" />
+
+
+            <TextView
+                android:id="@+id/thursdayLabel"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="Thursday"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wednesdayShowsRecyclerView" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/thursdayShowsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/thursdayLabel"/>
+
+            <TextView
+                android:id="@+id/fridayLabel"
+
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="Friday"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/thursdayShowsRecyclerView" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fridayShowsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fridayLabel"/>
+
+            <TextView
+                android:id="@+id/saturdayLabel"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="Saturday"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fridayShowsRecyclerView" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/saturdayShowsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/saturdayLabel"/>
+
+
+
+            <TextView
+                android:id="@+id/sundayLabel"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="Sunday"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/saturdayShowsRecyclerView" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/sundayShowsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sundayLabel"/>
+
+
+
+
+
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/scheduleDayLabelContainer"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/scheduleLabelContainer"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:layout_marginTop="60dp">-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:fontFamily="@font/roboto_bold"-->
+                    <!--android:text="MONDAY"-->
+                    <!--android:textColor="#F2F2F2"-->
+                    <!--android:textSize="20sp"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/scheduleContent"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:orientation="vertical"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/scheduleDayLabelContainer">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:layout_width="190dp"-->
+                        <!--android:layout_height="190dp"-->
+                        <!--android:src="@drawable/overnight_series"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_marginRight="4dp"/>-->
+
+                    <!--<ImageView-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:layout_width="190dp"-->
+                        <!--android:layout_height="190dp"-->
+                        <!--android:src="@drawable/erwan"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_marginLeft="4dp"/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:layout_width="190dp"-->
+                        <!--android:layout_height="190dp"-->
+                        <!--android:src="@drawable/coming_vlog"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_marginRight="4dp"/>-->
+
+                    <!--<ImageView-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:layout_width="190dp"-->
+                        <!--android:layout_height="190dp"-->
+                        <!--android:src="@drawable/coming_juday"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_marginLeft="4dp"/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:layout_width="190dp"-->
+                        <!--android:layout_height="190dp"-->
+                        <!--android:src="@drawable/techie"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_marginRight="4dp"/>-->
+
+                    <!--<ImageView-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:layout_width="190dp"-->
+                        <!--android:layout_height="190dp"-->
+                        <!--android:src="@drawable/tripinas"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_marginLeft="4dp"/>-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>

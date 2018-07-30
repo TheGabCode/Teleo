@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#6FCF97">
+    <TextView
+        android:id="@+id/toast_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Teleo Custom Toast"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"/>
+</LinearLayout>

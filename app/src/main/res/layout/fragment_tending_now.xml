@@ -1,0 +1,129 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="gab.cdi.teloe.TrendingNow"
+    android:background="#303030">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp"
+            android:descendantFocusability="blocksDescendants">
+            <TextView
+                android:id="@+id/tredingNowLabelContainer"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Trending \n Now!"
+                android:textColor="#F2F2F2"
+                android:textSize="36sp"
+                android:paddingLeft="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/trendingNowRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tredingNowLabelContainer"/>
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/trendingNowContent"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/tredingNowLabelContainer">-->
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/linearLayout4"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:paddingLeft="20dp"-->
+                    <!--android:paddingRight="20dp"-->
+                    <!--&gt;-->
+                    <!--<ImageView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="200dp"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:scaleType="fitXY"-->
+                        <!--android:src="@drawable/thereset" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:fontFamily="@font/roboto_bold"-->
+                        <!--android:text="The Reset - Spoilers"-->
+                        <!--android:textColor="#F2F2F2"-->
+                        <!--android:textSize="20sp" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:fontFamily="@font/roboto_bold"-->
+                        <!--android:text="The Reset PH gang talks about Marvel: Infinity (MORE)"-->
+                        <!--android:textSize="15sp"-->
+                        <!--android:textColor="#F2F2F2"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:paddingLeft="20dp"-->
+                    <!--android:paddingRight="20dp">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="200dp"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:scaleType="fitXY"-->
+                        <!--android:src="@drawable/techie" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:fontFamily="@font/roboto_bold"-->
+                        <!--android:text="Vlog TV"-->
+                        <!--android:textSize="20sp"-->
+                        <!--android:textColor="#F2F2F2"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:fontFamily="@font/roboto_bold"-->
+                        <!--android:text="Your favorite vloggers are now on TV! (MORE)"-->
+                        <!--android:textSize="15sp"-->
+                        <!--android:textColor="#F2F2F2"/>-->
+
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</FrameLayout>
